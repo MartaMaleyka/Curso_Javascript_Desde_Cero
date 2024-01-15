@@ -70,3 +70,55 @@ var array = [1, 2, 3];
 var resultado = str.concat(" ", array);
 console.log(resultado);
 // Salida: "Hola 1,2,3"
+
+//Los caracteres de escape son secuencias especiales de caracteres que se utilizan para representar caracteres que 
+//de otra manera serían difíciles o imposibles de incluir directamente en una cadena de texto. 
+//En JavaScript, algunos de los caracteres de escape más comunes son:
+
+//1. `\n`: Salto de línea.
+
+    console.log("Hola\nmundo");
+   // Salida:
+   // Hola
+   // mundo
+
+
+//2. `\t`: Tabulación.
+   
+    console.log("Hola\tmundo");
+   // Salida: Hola    mundo
+   
+
+//3. `\r`: Retorno de carro (vuelve al inicio de la línea).
+   
+   console.log("Hola\rMundo");
+    Salida: Mundo
+   
+
+//4. `\\`: Barra invertida (backslash).
+
+   console.log("Este es un directorio: C:\\Usuarios\\Usuario");
+   // Salida: Este es un directorio: C:\Usuarios\Usuario
+
+
+//5. `\"` y `\'`: Comilla doble y comilla simple.
+ 
+   console.log("Texto con una \"comilla\" y otra 'comilla'.");
+   // Salida: Texto con una "comilla" y otra 'comilla'.
+   
+
+//6. `\b`: Retroceso (borra un carácter hacia atrás).
+  
+   console.log("Hola\bMundo");
+   // Salida: HolMundo
+   
+
+//7. `\uXXXX`: Notación Unicode para representar caracteres especiales mediante su código hexadecimal.
+  
+   console.log("\u03A9 es el símbolo de Omega.");
+   // Salida: Ω es el símbolo de Omega.
+
+/*
+   Estos son solo algunos ejemplos de caracteres de escape en JavaScript. 
+Son útiles para manejar situaciones donde necesitas incluir caracteres especiales dentro de tus cadenas de texto.
+*/
