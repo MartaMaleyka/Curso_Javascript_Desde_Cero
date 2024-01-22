@@ -1,4 +1,5 @@
-/*En las funciones puras, dada una misma entrada (input), obtendremos una misma salida (output). Por otro lado, las funciones puras no tienen efectos secundarios (side effects).
+/*En las funciones puras, dada una misma entrada (input), obtendremos una misma salida (output). 
+Por otro lado, las funciones puras no tienen efectos secundarios (side effects).
 
 Qué nos puede causar side effects:
 
@@ -24,7 +25,15 @@ function modificarObjeto(obj) {
 /*
 Solicitudes HTTP.
 */
-
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "https://api.example.com/data", true);
+xhr.onreadystatechange = function () {
+  if (xhr.readyState == 4 && xhr.status == 200) {
+    var data = JSON.parse(xhr.responseText);
+    console.log(data);
+  }
+};
+xhr.send();
 
 
 /*
