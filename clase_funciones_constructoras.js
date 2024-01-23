@@ -53,6 +53,8 @@ persona3.presentarse1(); // Hola, soy Alice y tengo 30 años.
 persona4.presentarse1(); // Hola, soy Bob y tengo 25 años.
 
 
-/*En este segundo ejemplo, el método `presentarse` se agrega al prototipo de la función constructora `Persona`, lo que significa que todas las instancias comparten la misma función. Esto reduce la duplicación de código y es más eficiente en términos de memoria.
+/*En este segundo ejemplo, el método `presentarse` se agrega al prototipo de la función constructora 
+`Persona`, lo que significa que todas las instancias comparten la misma función. Esto reduce la 
+duplicación de código y es más eficiente en términos de memoria.
 
 Espero que esta explicación te sea útil. Si tienes alguna pregunta adicional, no dudes en preguntar. */
