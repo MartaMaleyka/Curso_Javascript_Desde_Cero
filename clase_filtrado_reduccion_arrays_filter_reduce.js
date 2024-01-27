@@ -10,6 +10,28 @@ console.log("Elementos pares del array usando filter():", numerosPares);
 let sumaNumeros = numeros.reduce((acumulador, numero) => acumulador + numero, 0);
 console.log("Suma de todos los elementos del array usando reduce():", sumaNumeros);
 
+
+//CASO 2
+// Contar la frecuencia de cada palabra en el array words
+const words = ['apple', 'banana', 'hello', 'bye', 'banana', 'bye', 'bye'];
+const wordFrecuency = words.reduce((accumulator, currentValue) => {
+  if (accumulator[currentValue]) {
+    accumulator[currentValue]++;
+  } else {
+    accumulator[currentValue] = 1;
+  }
+  return accumulator;
+}, {});
+console.log(wordFrecuency); // Imprime la frecuencia de cada palabra
+
+// caso 3-  Filtrar las calificaciones que pasan del array grades y calcular el promedio
+const grades = [85, 92, 60, 78, 95, 66, 88, 50, 94];
+const passingGrades = grades.filter(grade => grade >= 70);
+const averagePassingGrade = passingGrades.reduce((sum, grade) => sum + grade, 0) / passingGrades.length;
+console.log('Original Grades: ', grades); // Imprime las calificaciones originales
+console.log('Passing Grades: ', passingGrades); // Imprime las calificaciones que pasan
+console.log('Average Passing Grade: ', averagePassingGrade); // Imprime el promedio de las calificaciones que pasan
+
 /*
 Explicación:
 
