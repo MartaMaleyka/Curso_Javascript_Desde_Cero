@@ -22,3 +22,4 @@ En este caso, comprueba si al menos un elemento es mayor de 30 años.
 // Impresión de la matriz de edades y el resultado de la comprobación
 console.log("Edades:", ages);
 console.log("¿Al menos uno es mayor de 30 años?", atLeastOneIsOver30);
+
